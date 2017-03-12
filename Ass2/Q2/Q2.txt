@@ -1,0 +1,16 @@
+//assume data type inside stack and queue are "int"
+queue q1;
+stack transfer;
+int temp;
+
+//transfer all the data in queue to the stack
+while(IsEmpty(q1)){
+  temp = dequeue(q1);
+  push(transfer, temp);
+}
+
+//output the all the data in the stack
+while(IsEmpty(transfer)){
+  printf("%d/n", top(transfer));
+  pop(transfer);
+}

@@ -1,0 +1,16 @@
+stack original, temp, target; //declare stack
+node temp_data; //for copying data
+
+//copying stack from original to temp
+while(!original.empty()){
+  temp1 = original.top;
+  temp.push(temp1);
+  original.pop();
+}
+
+//copying from temp to target
+while(!temp.empty()){
+  temp1 = temp.top;
+  target.push(temp1);
+  temp.pop();
+}
